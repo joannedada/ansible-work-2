@@ -7,40 +7,4 @@
     file: 
       path: /home/fedora/j1_dir
       state: directory
-  
-  tasks:
-  - name: Create Directory
-    file: 
-      path: /home/fedora/j1_dir_1
-      state: directory
-
-- name: Update j2 servers
-  hosts: j2
-
-  tasks:
-  - name: Create Directory
-    file: 
-      path: /home/fedora/j1_dir_1
-      state: directory
-  
-  tasks:
-  - name: Create Directory
-    file: 
-      path: /home/fedora/j1_dir_2
-      state: directory
-
-- name: Update webservers
-  hosts: webservers
-
-  tasks:
-  - name: Create Directory
-    file: 
-      path: /home/fedora/j1_dir_group_1
-      state: directory      
-  
-  tasks:
-  - name: Create Directory
-    file: 
-      path: /home/fedora/j1_dir_group_2
-      state: directory
 ...
