@@ -1,0 +1,16 @@
+---
+- name: Deploy web App
+  hosts: j2
+  become: yes
+
+  tasks:
+  - name: Install Git
+    yum: 
+      name: git
+      state: present
+  
+  - name: start httpd
+    git:
+     repo: https://github.com/joannedada/ansible-work-2.git
+     dest: /var/www/html
+...

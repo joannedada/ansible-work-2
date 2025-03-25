@@ -1,5 +1,5 @@
 ---
-- name: Update j1 servers
+- name: Update j2 servers
   hosts: j2
   become: yes
 
