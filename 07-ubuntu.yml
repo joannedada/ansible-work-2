@@ -1,6 +1,6 @@
 ---
-- name: Update u2 servers
-  hosts: u2
+- name: Update u1 servers
+  hosts: u1
   become: yes
 
   tasks:
