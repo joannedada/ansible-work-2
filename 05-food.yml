@@ -1,5 +1,5 @@
 ---
-- name: Deploy web App
+- name: Deploy Web App
   hosts: j2
   become: yes
 
@@ -11,6 +11,6 @@
   
   - name: start httpd
     git:
-     repo: https://github.com/CeeyIT-Solutions/ecomm-3.git
+     repo: https://github.com/CeeyIT-Solutions/food3.git
      dest: /var/www/html
 ...
