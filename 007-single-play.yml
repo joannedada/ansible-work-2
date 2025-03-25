@@ -1,0 +1,15 @@
+---
+- name: Update all webservers 
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Create /opt/devops directory
+      file:
+        path: /opt/devops
+        state: directory
+    - name: Create info.txt in /opt/devops
+      copy:
+        dest: /opt/devops/info.txt
+        content: "Hello from Ansible!"
+...

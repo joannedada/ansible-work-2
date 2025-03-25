@@ -1,0 +1,10 @@
+---
+- name: Update j1 servers
+  hosts: j1
+
+  tasks:
+  - name: Create Directory
+    file: 
+      path: /home/fedora/j1_dir
+      state: directory
+...
